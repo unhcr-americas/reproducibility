@@ -141,7 +141,7 @@ You can’t become a great cook overnight.
 
 .pull-left[
 
-potential aspect of resistance...
+Potential aspect of resistance...
 
  *  I do not know how to eat it: I see all those elements on it without being able to understnad why you add them...
  
@@ -155,7 +155,8 @@ potential aspect of resistance...
 ]
  
 ???
- simple data visualisation for decision making or complex patterns interpretation for knowledge building
+simple data visualization for decision making or complex patterns interpretation for knowledge building
+
 ---
 
 ## What & When? 
@@ -187,6 +188,9 @@ class: center, middle, inverse
  Peer Review allows for __transparency__
  
  Transparency allows for __scrutinity__
+ 
+ 
+ Scrutinity allows for __accountability__
 
 
 ]
@@ -198,9 +202,6 @@ class: center, middle, inverse
 Ethical principles into algorithmic design - would apply as well when designing household vulnerability scoring formula to inform humanitarian targeting - https://www.hum-dseg.org/sites/default/files/2020-10/Framework%20for%20the%20ethical%20use.pdf
 
 ---
-
-
-
 
 ## Productivity  
 
