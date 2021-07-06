@@ -72,19 +72,23 @@ The best way to start and learn is to have a concrete project! If you have one a
 
 ## Vision
 
-"Multi-functional teams, with strengthened data literacy, regularly conduct meaningful and documented joint data interpretation sessions to define their strategic directions based on statistical evidences" 
+<span style='font-size:50px;'>"Multi-functional teams, with strengthened data literacy, regularly conduct meaningful and documented joint data interpretation sessions to define their strategic directions based on statistical evidences"</span>
 
 ---
 
-## A _Theory of Change_ for Data analysis
+## A Theory of Change for Data analysis
 
-### Proper user of data for advocacy & programmatic decision making
+<span style='font-size:30px;'>Proper user of data for advocacy & programmatic decision making </span>
 
-- Corporate Standards exist to define how to encode & process household surveys dataset
-- Field data experts are trained based on precise recipes and predefined tools at each step of the data life cycle
-- Data are presented, discussed and linked to expert knowledge during data interpretation sessions with a multi-functional team 
-- All potential valid Interpretations, including diverging views, are systematically recorded
-- Persuasive "Data Stories“ and Policy papers are generated
+ <span style='font-size:40px;'>&#8618;</span> Corporate __Standards__ exist to define how to encode & process household surveys dataset
+ 
+ <span style='font-size:40px;'>&#8618;</span> Field data experts are trained based on precise recipes and predefined tools at each step of the __data life cycle__
+
+ <span style='font-size:40px;'>&#8618;</span> Data are presented, discussed and linked to expert knowledge during data __interpretation__ sessions with a multi-functional team
+ 
+ <span style='font-size:40px;'>&#8618;</span> All potential valid interpretations, including diverging views, are systematically __recorded__
+ 
+ <span style='font-size:40px;'>&#8618;</span>  __Persuasive__ "Data Stories“ and Policy papers are generated
 
 
 ---
@@ -94,58 +98,105 @@ The best way to start and learn is to have a concrete project! If you have one a
 
 .pull-left[
 
+When a chef is starting out with a new dish...
 
-Ingredients
-
-Recipes
-Decoration
-
+ - Hypothesis Tasting  -- Setting the right questions
+ 
+ - Ingredients = source the Data
+ 
+ - Wash your food = clean your data
+ 
+ - Flavor engineering = create calculated & derived variables
+ 
+ - Taste and explore = reshape & visualize the data
+ 
+ - Tune your oven = statistical modeling
+ 
+ - Art of plating = use styled brand
+ 
+ - Document your recipe = add technical comments
 ]
 
 .pull-right[
 
-.img75[![Eat the cake](images/cake.jpg)] 
+.img85[![Eat the cake](images/cake.jpg)] 
 ]
 
+???
+https://towardsdatascience.com/data-science-explained-with-cooking-1a801731d749
+
+https://towardsdatascience.com/5-reasons-why-data-science-is-like-cooking-daa506b4166a
+
+Without good ingredients, you can’t cook a good dish.
+Most time and effort are spent on cleaning and preparing the ingredients.  
+Different tools and techniques are needed for different recipes.
+Cooking is both a science and an art.  
+You can’t become a great cook overnight.
+
+---
+
+## Information Anxiety 
+
+<span style='font-size:30px;'> _When people do not want to eat the cake..._ </span>
+
+.pull-left[
+
+potential aspect of resistance...
+
+ *  I do not know how to eat it: I see all those elements on it without being able to understnad why you add them...
+ 
+ *  I do not trust this cake: How was it created? Did you follow correctly the recipe? Were the ingredient fresh? Can I trust how you sourced the ingredient?
+ 
+ *  This is not the cake I need: It looks too heavy and I will not be able to digest it... 
+
+]
+.pull-right[
+.img[![Eat the cake](images/cake1.jpg)] 
+]
+ 
+???
+ simple data visualisation for decision making or complex patterns interpretation for knowledge building
+---
+
+## What & When? 
+
+Dashbaord with PowerBI, Notebook with R & Machine Learning with Python... 
 
 
+???
+ 
 ---
 
 class: center, middle, inverse
 
 # Why do you need to work in a reproducible way? 
 
-### Science, Ethics, Productivity, Learning
+### Ethics, Productivity, Learning
 
 
 ---
 
-## Science
-
-Promoting scientific transparency in analysis​: the 4 Mertonian norms (often abbreviated as the CUDO-norms
-
-.img[![Eat the cake](images/merton.png)] 
-
-
-???
-thical principles into algorithmic design - would apply as well when designing household vulnerability scoring formula to inform humanitarian targeting
-https://www.hum-dseg.org/sites/default/files/2020-10/Framework%20for%20the%20ethical%20use.pdf
-
----
-
-## Ethics of science
-
+## Ethics  
 .pull-left[
-Merthonian norm
+
+<span style='font-size:30px;'>Science is '_show me_' - not '_trust me_'</span>
+ 
+
+ Reproducibility allows for __peer review__
+ 
+ Peer Review allows for __transparency__
+ 
+ Transparency allows for __scrutinity__
+
 
 ]
 .pull-right[
-.img75[![Eat the cake](images/ethics.jpeg)] 
+.img85[![Eat the cake](images/ethics.jpeg)] 
 ]
 
 ???
-thical principles into algorithmic design - would apply as well when designing household vulnerability scoring formula to inform humanitarian targeting
-https://www.hum-dseg.org/sites/default/files/2020-10/Framework%20for%20the%20ethical%20use.pdf
+Ethical principles into algorithmic design - would apply as well when designing household vulnerability scoring formula to inform humanitarian targeting - https://www.hum-dseg.org/sites/default/files/2020-10/Framework%20for%20the%20ethical%20use.pdf
+
 ---
 
 
@@ -155,24 +206,36 @@ https://www.hum-dseg.org/sites/default/files/2020-10/Framework%20for%20the%20eth
 
 .pull-left[
 
-The force of automation: creating functions & scripts
+<span style='font-size:30px;'>Automation though functions & scripts can help skipping __repetitive tasks__</span>
+
+> Tasks that involve recurrent __data manipulation__ are undertaken by teams...
+> .. but not everyone in the team needs to be a __geek/coder__! 
 ]
 .pull-right[
-.img75[![Eat the cake](images/cake.jpg)] 
+.img130[![Automate](images/alternate-view-of-automation.png)] 
 ]
+???
+https://blog.jonudell.net/2012/01/09/another-way-to-think-about-geeks-and-repetitive-tasks/
 
 ---
 
 ## Learning
 
 .pull-left[
-by doing
-though peer review
+
+
+<span style='font-size:30px;'>Effective and motivating approach to learn start from an end-product that one can __reverse engineer__!</span>
+
+Let them eat the cake (first - you can tell them the ingredient later...)
+
+What is the appealing exercise among the 2 at right! 
 
 ]
 .pull-right[
-.img75[![Eat the cake](images/cake.jpg)] 
+.img[![Eat the cake](images/learn.png)] 
 ]
+???
+https://speakerdeck.com/player/078592d490ae459790af7e77695fafcf?title=false&skipResize=true
 
 ---
 
@@ -180,42 +243,46 @@ class: center, middle, inverse
 
 # Conditions for reproducibility. 
 
-### Curated source, packages, documentation
+### Sourcing,  documentating, & packaging
 
 ---
 
-## Curated source
+## Sourcing data
 
 .pull-left[
-there's no clean data
+Data Wrangling takes usually more than 80% of projec time...
+
+Imagine if you need to rewind your analysis...
 
 ]
 .pull-right[
-.img75[![Eat the cake](images/cake.jpg)] 
+.img[![Eat the cake](images/data-science-wrangle.png)] 
 ]
+
 
 ---
 
-## packages  
-
-.pull-left[
-
-Making your function re-usable
-]
-.pull-right[
-.img75[![Eat the cake](images/cake.jpg)] 
-]
-
----
-
-## documentation
+## Documentating all your scripts
 
 .pull-left[
 Explain what you do
 
 ]
 .pull-right[
-.img75[![Eat the cake](images/cake.jpg)] 
+.img[![Eat the cake](images/tips.jpg)] 
+]
+
+
+---
+
+## Packaging functions  
+
+.pull-left[
+
+Making your function re-usable
+]
+.pull-right[
+.img75[![Eat the cake](images/package.png)] 
 ]
 
 
@@ -224,7 +291,7 @@ class: center, middle, inverse
 
 # Hands-on practice: a practical run-through based on Household survey dataset
 
-### Crunching, Interpretation, Dissemination
+### Crunching, Interpretation & Dissemination
 
 ---
 
@@ -233,9 +300,11 @@ class: center, middle, inverse
 .pull-left[
 Data crunching
 
+
+
 ]
 .pull-right[
-.img75[![Eat the cake](images/exploration.jpeg)] 
+.img[![Eat the cake](images/exploration.jpeg)] 
 ]
 
 ???
@@ -243,33 +312,81 @@ A comparison of packages for Automated Exploratory Data Analysis
 https://arxiv.org/pdf/1904.02101.pdf
 https://github.com/mstaniak/autoEDA-resources
 
+One of the most significant disadvantages of PowerBI is that it is read-only. As a user, you cannot use charts/tables to make decisions and save them in a database directly. Also, PowerBI doesn’t have an accessible source code. You can only edit fields in WYSIWYG mode, which makes PowerBI easy to start but difficult to maintain. Having no source code makes it nearly impossible to have proper version control, automatically test logic, or collaborate on large projects. https://appsilon.com/powerbi-vs-r-shiny/
+
+
+Pros of Power BI - Cross-filtering
+
+Pros of RStudio - 
+ - Visual editor for R Markdown documents
+ - In-line code execution using blocks
+ - Sophisticated statistical packages
+ - Supports Rcpp, python and SQL
+ - Can be themed
+ - In-line graphing support
+ - Latex support
+
+
+What is RStudio?
+An integrated development environment for R, with a console, syntax-highlighting editor that supports direct code execution. Publish and distribute data products across your organization. One button deployment of Shiny applications, R Markdown reports, Jupyter Notebooks, and more. Collections of R functions, data, and compiled code in a well-defined format. You can expand the types of analyses you do by adding packages.
+
+
+You can use R script with Power BI in several ways. The key ones include:
+
+ - Data source – expand the range of available data sources, provide data processing logic at the import stage
+ - Processing script – enrich data processing capabilities and engineering features
+ - Visualization – extend the range of visualizations available in R and implement charts
+ - As a part of Power BI visualization – gain the ability to build R-based visualizations and package them into ready-to-put boxes directly into Power BI.
+https://www.predicagroup.com/blog/visualizing-data-r-script-power-bi/ 
 
 ---
 
 ## Insight creation
 
 .pull-left[
-Joint Data interpration
-from assumption on key question to evidence based statement
+<span style='font-size:30px;'>Not all data can call for interpretation - select the one that can gemerate discussions & __debates__</span>
+
+
+Chart title framed as an opening question
+
+Facilitating data interpretation : 
+  * __Hook__, 
+  * __Discover__,
+  * __Challenge__,
+  * __Call to action__
 
 ]
 .pull-right[
-.img75[![Eat the cake](images/advanced.jpg)] 
+.img[![Eat the cake](images/story.png)] 
 ]
+
 ???
 https://www.ictworks.org/wp-content/uploads/2021/02/usaid-guide-artificial-intelligence.pdf
+https://bluemoondigital.co/our-blog/5-elements-storytelling-data/
+
+
 ---
 
 ## Communicate with data
 .pull-left[
-Microsite
+<span style='font-size:30px;'>From __assumptions to evidence__ based statement</span>
+
+Data is to support Narrative - not the other way around!
+
+The Art Data Storytelling: 
+ * __Explain__, 
+ * __Enlighten__,
+ * __Engage__ 
+
 
 ]
 .pull-right[
-.img75[![Eat the cake](images/cake.jpg)] 
+.img[![Eat the cake](images/read.png)] 
 ]
 
 ???
+
+
 https://distill.pub/2020/communicating-with-interactive-articles/#applications-tab 
 Research Dissemination
 Conducting novel research requires deep understanding and expertise in a specific area. Once achieved, researchers continue contributing new knowledge for future researchers to use and build upon. Over time, this consistent addition of new knowledge can build up, contributing to what some have called research debt. Not everyone is an expert in every field, and it can be easy to lose perspective and forget the bigger picture. Yet research should be understood by many. Interactive articles can be used to distill the latest progress in various research fields and make their methods and results accessible and understandable to a broader audience.
@@ -292,31 +409,35 @@ class: center, middle, inverse
 
 # Conclusion 
 
-### Learn, Join, Maintain
-
----
-
-## Learn
-
-.img80[![Eat the cake](images/tips.jpg)] 
-]
-
 ---
 
 ## Community
 .pull-left[
-Microsite
+
+<span style='font-size:50px;'>you are not alone</span>
+
+ - More than 450 users from multiple organisation in the humanitarian-useR-group
+ - Around already 20 R champions within UNHCR  vs more than 420 PowerBI Pro users
+ - Existing packages that you can already re-use
 
 ]
 .pull-right[
-.img75[![Eat the cake](images/cake.jpg)] 
+.img[![Eat the cake](images/group.png)] 
 ]
 
 ---
 
-## Multi Tier Support
+##  Institutionalisation
 .pull-left[
-Microsite
+
+Using Multi Tier IT Standard Support model...
+
+Tier 0: 
+Tier 1
+Tier 2
+Tier 3
+Tier 4
+
 
 ]
 .pull-right[
