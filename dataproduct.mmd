@@ -1,0 +1,32 @@
+%%{init: {'theme':'base'}}%%
+  graph LR
+    A[Building Data Product] ==> B{Key Performance Indicators?}
+    B ==>|yes| C(PowerBI)
+    B ==>|no| D{Basic Statistics?}
+    D ==>|yes| E{Polished visuals?}
+    D ==>|no| F{Machine Learning?}
+    F ==>|no| E
+    F ==>|yes| H{Robust aplication?}
+    E ==>|yes| I(R)
+    E -.-|no, then potentially| J
+    H ==>|yes| J(Python)
+    H ==>|no| I;
+   classDef product fill:#0072BC,stroke:#f66,stroke-width:2px,color:#FFFFFF,stroke-dasharray: 5 5;
+   class C product;
+   class I product;
+   class J product;
+   classDef decision fill:#FAEB00;
+   class B decision;
+   class D decision;
+   class F decision;
+   class H decision;
+    subgraph Dashboard
+    C
+    end
+    subgraph Notebook / Interface
+    I
+    end
+    subgraph Application
+    J
+    end
+   end

@@ -135,19 +135,21 @@ You can’t become a great cook overnight.
 
 ---
 
-## Information Anxiety 
+## Information Anxiety  & Analysis paralysis
 
 <span style='font-size:30px;'> _When people do not want to eat the cake..._ </span>
 
 .pull-left[
 
-Potential aspect of resistance...
+Potential source of reluctance...
 
- *  I do not know how to eat it: I see all those elements on it without being able to understnad why you add them...
+ *  I do not know how to eat it: I see all those elements on it without being able to understand why they were added there and how this works...
  
  *  I do not trust this cake: How was it created? Did you follow correctly the recipe? Were the ingredient fresh? Can I trust how you sourced the ingredient?
  
- *  This is not the cake I need: It looks too heavy and I will not be able to digest it... 
+ *  This is not the cake I need! It looks too heavy & too big: I will not be able to digest it... 
+ 
+ *  I am not hungry and do not even know what cake I want... 
 
 ]
 .pull-right[
@@ -158,10 +160,105 @@ Potential aspect of resistance...
 simple data visualization for decision making or complex patterns interpretation for knowledge building
 
 ---
+.pull-left[
 
-## What & When? 
+## Data Products: When What? 
 
-Dashbaord with PowerBI, Notebook with R & Machine Learning with Python... 
+<span style='font-size:30px;'> Dashboard are meaningfull only when displaying KPIs!</span>
+
+> Key Performance Indicators (KPIs) are indicators specificlly designed to show progress toward an intended result, i.e a predefined __target__
+
+> Create an analytical basis for __decision making__, aka Business Intelligence 
+
+> Help focus attention of Snr Management on what matters most - a good dashbaord needs to be __concise__ 
+]
+.pull-right[ 
+
+
+
+
+```{r echo=FALSE, out.width='100%',  message=FALSE, warning=FALSE}
+#install.packages('DiagrammeR')
+# /* https://mermaid-js.github.io/mermaid/#/flowchart */
+# https://mermaid-js.github.io/mermaid-live-editor/edit
+# https://mermaid-js.github.io/mermaid/#/flowchart?id=styling-and-classes
+# https://bookdown.org/yihui/rmarkdown-cookbook/diagrams.html
+# library(DiagrammeR)
+# mermaid("dataproduct.mmd")
+
+library("DiagrammeR")
+
+grViz(" 
+  digraph CFA {
+  
+    # direction of flowchart left to right      
+    graph[layout = dot, # neato|dot|twopi|circo|twopi
+          #rankdir = LR, 
+          label= '', 
+          fontsize= 45] 
+
+    # Decision 
+    node [shape = oval, fontname = Lato, fontsize= 90, margin=1]
+    X [label = 'Building a data product']; 
+    
+    # Decision 
+    node [shape = diamond, 
+          style = filled,
+          color =  Gold, 
+          fillcolor = Gold, 
+          fontname = Lato, 
+          fontsize= 95]
+    a [label = 'Need to display\\n Key Performance\\n Indicators (KPI)?']; 
+    b [label = 'Basic\\n Statistics?']; 
+    c [label = 'Polished visuals with\\n  brand style?']; 
+    d [label = 'Satistical Modeling \\n Machine Learning?']; 
+    e [label = 'Quick processing \\n is critical ?']; 
+    f [label = 'Need for \\n Interactivity ?']; 
+
+    # Choices
+    node [shape = box, 
+          style = filled,
+          fillcolor = Lavender, 
+          fontname = Lato, 
+          fontsize= 120] 
+    1 [label = 'Dashboard  \\n with PowerBI', 
+             constraint = false , margin=1.5 ];
+    2 [label = 'Notebook \\n with Rmd ', margin=1.5];
+    3 [label = 'Application\\n  with Python', margin=1.5];
+    4 [label = 'Interface\\n with R-Shiny', margin=1.5];
+
+    # Connect nodes with edges and labels
+    X -> a [label = 'Start', fontsize= 90, penwidth = 15] 
+    a -> 1 [label = 'Yes', fontsize= 90, penwidth = 15]  ## PowerBI
+    a -> b [label = 'No', fontsize= 90, penwidth = 15]  ## Continue
+    
+    ## Basic stat
+    b -> c [label = 'Yes', fontsize= 90, penwidth = 15] 
+    b -> d  [label = 'No', fontsize= 90, penwidth = 15]
+    
+    ## Polished visuals
+    c -> 2 [label = 'Yes', fontsize= 90, penwidth = 15]
+    c -> e [label = 'No', fontsize= 90, penwidth = 15]
+    
+    ## Machine learning
+    d -> e [label = 'Yes', fontsize= 90, penwidth = 15]
+    d -> 2 [label = 'No', fontsize= 90, penwidth = 15]
+    
+    ## Quick processing
+    e -> 3 [label = 'Yes', fontsize= 90, penwidth = 15]
+    e -> f [label = 'No', fontsize= 90, penwidth = 15]
+    
+    ## Interactivity
+    f -> 4 [label = 'Yes', fontsize= 90, penwidth = 15]
+    f -> 2 [label = 'No', fontsize= 90, penwidth = 15]
+  }
+
+")
+```
+
+
+]
+
 
 
 ???
@@ -177,13 +274,13 @@ class: center, middle, inverse
 
 ---
 
-## Ethics  
+## Ethics: Science is '_show me_' - not '_trust me_'  
 .pull-left[
 
-<span style='font-size:30px;'>Science is '_show me_' - not '_trust me_'</span>
+<span style='font-size:30px;'>Reproducibility allows for __peer review__</span>
  
 
- Reproducibility allows for __peer review__
+ 
  
  Peer Review allows for __transparency__
  
@@ -191,11 +288,12 @@ class: center, middle, inverse
  
  
  Scrutinity allows for __accountability__
-
+ 
+ > _It's okay to make mistakes, as long as one can detect them and that you can learn from them..._ 
 
 ]
 .pull-right[
-.img85[![Eat the cake](images/ethics.jpeg)] 
+.img60[![Eat the cake](images/ethics.jpeg)] 
 ]
 
 ???
@@ -211,6 +309,7 @@ Ethical principles into algorithmic design - would apply as well when designing 
 
 > Tasks that involve recurrent __data manipulation__ are undertaken by teams...
 > .. but not everyone in the team needs to be a __geek/coder__! 
+
 ]
 .pull-right[
 .img130[![Automate](images/alternate-view-of-automation.png)] 
@@ -220,16 +319,16 @@ https://blog.jonudell.net/2012/01/09/another-way-to-think-about-geeks-and-repeti
 
 ---
 
-## Learning
+## Motivating approach to learning 
 
 .pull-left[
 
 
-<span style='font-size:30px;'>Effective and motivating approach to learn start from an end-product that one can __reverse engineer__!</span>
+<span style='font-size:40px;'>Start from an end-product and __reverse engineer it__!</span>
 
-Let them eat the cake (first - you can tell them the ingredient later...)
+Eat the cake first!  (then play with and change ingredients...)
 
-What is the appealing exercise among the 2 at right! 
+What is the most appealing exercise among the 2 proposed aside?!! 
 
 ]
 .pull-right[

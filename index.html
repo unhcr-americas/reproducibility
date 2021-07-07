@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="date" content="2021-07-08" />
     <script src="libs/header-attrs-2.9/header-attrs.js"></script>
+    <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+    <script src="libs/viz-1.8.2/viz.js"></script>
+    <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+    <script src="libs/grViz-binding-1.0.6.1/grViz.js"></script>
     <link rel="stylesheet" href="unhcr-slides.css" type="text/css" />
     <link rel="stylesheet" href="unhcr-slides-fonts.css" type="text/css" />
   </head>
@@ -140,19 +144,21 @@ You can’t become a great cook overnight.
 
 ---
 
-## Information Anxiety 
+## Information Anxiety  &amp; Analysis paralysis
 
 &lt;span style='font-size:30px;'&gt; _When people do not want to eat the cake..._ &lt;/span&gt;
 
 .pull-left[
 
-Potential aspect of resistance...
+Potential source of reluctance...
 
- *  I do not know how to eat it: I see all those elements on it without being able to understnad why you add them...
+ *  I do not know how to eat it: I see all those elements on it without being able to understand why they were added there and how this works...
  
  *  I do not trust this cake: How was it created? Did you follow correctly the recipe? Were the ingredient fresh? Can I trust how you sourced the ingredient?
  
- *  This is not the cake I need: It looks too heavy and I will not be able to digest it... 
+ *  This is not the cake I need! It looks too heavy &amp; too big: I will not be able to digest it... 
+ 
+ *  I am not hungry and do not even know what cake I want... 
 
 ]
 .pull-right[
@@ -163,10 +169,29 @@ Potential aspect of resistance...
 simple data visualization for decision making or complex patterns interpretation for knowledge building
 
 ---
+.pull-left[
 
-## What &amp; When? 
+## Data Products: When What? 
 
-Dashbaord with PowerBI, Notebook with R &amp; Machine Learning with Python... 
+&lt;span style='font-size:30px;'&gt; Dashboard are meaningfull only when displaying KPIs!&lt;/span&gt;
+
+&gt; Key Performance Indicators (KPIs) are indicators specificlly designed to show progress toward an intended result, i.e a predefined __target__
+
+&gt; Create an analytical basis for __decision making__, aka Business Intelligence 
+
+&gt; Help focus attention of Snr Management on what matters most - a good dashbaord needs to be __concise__ 
+]
+.pull-right[ 
+
+
+
+
+<div id="htmlwidget-79c3bda3e0d584367af1" style="width:100%;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-79c3bda3e0d584367af1">{"x":{"diagram":" \n  digraph CFA {\n  \n    # direction of flowchart left to right      \n    graph[layout = dot, # neato|dot|twopi|circo|twopi\n          #rankdir = LR, \n          label= \"\", \n          fontsize= 45] \n\n    # Decision \n    node [shape = oval, fontname = Lato, fontsize= 90, margin=1]\n    X [label = \"Building a data product\"]; \n    \n    # Decision \n    node [shape = diamond, \n          style = filled,\n          color =  Gold, \n          fillcolor = Gold, \n          fontname = Lato, \n          fontsize= 95]\n    a [label = \"Need to display\\n Key Performance\\n Indicators (KPI)?\"]; \n    b [label = \"Basic\\n Statistics?\"]; \n    c [label = \"Polished visuals with\\n  brand style?\"]; \n    d [label = \"Satistical Modeling \\n Machine Learning?\"]; \n    e [label = \"Quick processing \\n is critical ?\"]; \n    f [label = \"Need for \\n Interactivity ?\"]; \n\n    # Choices\n    node [shape = box, \n          style = filled,\n          fillcolor = Lavender, \n          fontname = Lato, \n          fontsize= 120] \n    1 [label = \"Dashboard  \\n with PowerBI\", \n             constraint = false , margin=1.5 ];\n    2 [label = \"Notebook \\n with Rmd \", margin=1.5];\n    3 [label = \"Application\\n  with Python\", margin=1.5];\n    4 [label = \"Interface\\n with R-Shiny\", margin=1.5];\n\n    # Connect nodes with edges and labels\n    X -> a [label = \"Start\", fontsize= 90, penwidth = 15] \n    a -> 1 [label = \"Yes\", fontsize= 90, penwidth = 15]  ## PowerBI\n    a -> b [label = \"No\", fontsize= 90, penwidth = 15]  ## Continue\n    \n    ## Basic stat\n    b -> c [label = \"Yes\", fontsize= 90, penwidth = 15] \n    b -> d  [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Polished visuals\n    c -> 2 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    c -> e [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Machine learning\n    d -> e [label = \"Yes\", fontsize= 90, penwidth = 15]\n    d -> 2 [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Quick processing\n    e -> 3 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    e -> f [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Interactivity\n    f -> 4 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    f -> 2 [label = \"No\", fontsize= 90, penwidth = 15]\n  }\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+]
+
 
 
 ???
@@ -182,13 +207,13 @@ class: center, middle, inverse
 
 ---
 
-## Ethics  
+## Ethics: Science is '_show me_' - not '_trust me_'  
 .pull-left[
 
-&lt;span style='font-size:30px;'&gt;Science is '_show me_' - not '_trust me_'&lt;/span&gt;
+&lt;span style='font-size:30px;'&gt;Reproducibility allows for __peer review__&lt;/span&gt;
  
 
- Reproducibility allows for __peer review__
+ 
  
  Peer Review allows for __transparency__
  
@@ -196,11 +221,12 @@ class: center, middle, inverse
  
  
  Scrutinity allows for __accountability__
-
+ 
+ &gt; _It's okay to make mistakes, as long as one can detect them and that you can learn from them..._ 
 
 ]
 .pull-right[
-.img85[![Eat the cake](images/ethics.jpeg)] 
+.img60[![Eat the cake](images/ethics.jpeg)] 
 ]
 
 ???
@@ -216,6 +242,7 @@ Ethical principles into algorithmic design - would apply as well when designing 
 
 &gt; Tasks that involve recurrent __data manipulation__ are undertaken by teams...
 &gt; .. but not everyone in the team needs to be a __geek/coder__! 
+
 ]
 .pull-right[
 .img130[![Automate](images/alternate-view-of-automation.png)] 
@@ -225,16 +252,16 @@ https://blog.jonudell.net/2012/01/09/another-way-to-think-about-geeks-and-repeti
 
 ---
 
-## Learning
+## Motivating approach to learning 
 
 .pull-left[
 
 
-&lt;span style='font-size:30px;'&gt;Effective and motivating approach to learn start from an end-product that one can __reverse engineer__!&lt;/span&gt;
+&lt;span style='font-size:40px;'&gt;Start from an end-product and __reverse engineer it__!&lt;/span&gt;
 
-Let them eat the cake (first - you can tell them the ingredient later...)
+Eat the cake first!  (then play with and change ingredients...)
 
-What is the appealing exercise among the 2 at right! 
+What is the most appealing exercise among the 2 proposed aside?!! 
 
 ]
 .pull-right[
