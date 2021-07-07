@@ -41,7 +41,7 @@ layout: true
 
 **Not today:**
 
-- Training on R language!
+- Induction Training on R language! For this head to [UNHCR Learn &amp; Connect]
 
 ???
 Have you ever completed the development of a data product with the feeling that you may have done a mistake or not have used the optimal way to clean or process your data?  
@@ -79,9 +79,9 @@ The best way to start and learn is to have a concrete project! If you have one a
 ---
 
 
-## Vision
+## A Vision for data analysis
 
-&lt;span style='font-size:50px;'&gt;"Multi-functional teams, with strengthened data literacy, regularly conduct meaningful and documented joint data interpretation sessions to define their strategic directions based on statistical evidences"&lt;/span&gt;
+&lt;span style='font-size:50px; color:grey;'&gt;"Multi-functional teams, with strengthened data literacy, regularly conduct meaningful and documented joint data interpretation sessions to define their strategic directions based on statistical evidences"&lt;/span&gt;
 
 ---
 
@@ -186,8 +186,8 @@ simple data visualization for decision making or complex patterns interpretation
 
 
 
-<div id="htmlwidget-79c3bda3e0d584367af1" style="width:100%;height:504px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-79c3bda3e0d584367af1">{"x":{"diagram":" \n  digraph CFA {\n  \n    # direction of flowchart left to right      \n    graph[layout = dot, # neato|dot|twopi|circo|twopi\n          #rankdir = LR, \n          label= \"\", \n          fontsize= 45] \n\n    # Decision \n    node [shape = oval, fontname = Lato, fontsize= 90, margin=1]\n    X [label = \"Building a data product\"]; \n    \n    # Decision \n    node [shape = diamond, \n          style = filled,\n          color =  Gold, \n          fillcolor = Gold, \n          fontname = Lato, \n          fontsize= 95]\n    a [label = \"Need to display\\n Key Performance\\n Indicators (KPI)?\"]; \n    b [label = \"Basic\\n Statistics?\"]; \n    c [label = \"Polished visuals with\\n  brand style?\"]; \n    d [label = \"Satistical Modeling \\n Machine Learning?\"]; \n    e [label = \"Quick processing \\n is critical ?\"]; \n    f [label = \"Need for \\n Interactivity ?\"]; \n\n    # Choices\n    node [shape = box, \n          style = filled,\n          fillcolor = Lavender, \n          fontname = Lato, \n          fontsize= 120] \n    1 [label = \"Dashboard  \\n with PowerBI\", \n             constraint = false , margin=1.5 ];\n    2 [label = \"Notebook \\n with Rmd \", margin=1.5];\n    3 [label = \"Application\\n  with Python\", margin=1.5];\n    4 [label = \"Interface\\n with R-Shiny\", margin=1.5];\n\n    # Connect nodes with edges and labels\n    X -> a [label = \"Start\", fontsize= 90, penwidth = 15] \n    a -> 1 [label = \"Yes\", fontsize= 90, penwidth = 15]  ## PowerBI\n    a -> b [label = \"No\", fontsize= 90, penwidth = 15]  ## Continue\n    \n    ## Basic stat\n    b -> c [label = \"Yes\", fontsize= 90, penwidth = 15] \n    b -> d  [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Polished visuals\n    c -> 2 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    c -> e [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Machine learning\n    d -> e [label = \"Yes\", fontsize= 90, penwidth = 15]\n    d -> 2 [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Quick processing\n    e -> 3 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    e -> f [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Interactivity\n    f -> 4 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    f -> 2 [label = \"No\", fontsize= 90, penwidth = 15]\n  }\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ab9571cfdcc15fbb6dfb" style="width:100%;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ab9571cfdcc15fbb6dfb">{"x":{"diagram":" \n  digraph CFA {\n  \n    # direction of flowchart left to right      \n    graph[layout = dot, # neato|dot|twopi|circo|twopi\n          #rankdir = LR, \n          label= \"\", \n          fontsize= 45] \n\n    # Decision \n    node [shape = oval, fontname = Lato, fontsize= 90, margin=1]\n    X [label = \"Building a data product\"]; \n    \n    # Decision \n    node [shape = diamond, \n          style = filled,\n          color =  Gold, \n          fillcolor = Gold, \n          fontname = Lato, \n          fontsize= 95]\n    a [label = \"Need to display\\n Key Performance\\n Indicators (KPI)?\"]; \n    b [label = \"Basic\\n Statistics?\"]; \n    c [label = \"Polished visuals with\\n  brand style?\"]; \n    d [label = \"Satistical Modeling \\n Machine Learning?\"]; \n    e [label = \"Quick processing \\n is critical ?\"]; \n    f [label = \"Need for \\n Interactivity ?\"]; \n\n    # Choices\n    node [shape = box, \n          style = filled,\n          fillcolor = Lavender, \n          fontname = Lato, \n          fontsize= 120] \n    1 [label = \"Dashboard  \\n with PowerBI\", \n             constraint = false , margin=1.5 ];\n    2 [label = \"Notebook \\n with Rmd \", margin=1.5];\n    3 [label = \"Application\\n  with Python\", margin=1.5];\n    4 [label = \"Interface\\n with R-Shiny\", margin=1.5];\n\n    # Connect nodes with edges and labels\n    X -> a [label = \"Start\", fontsize= 90, penwidth = 15] \n    a -> 1 [label = \"Yes\", fontsize= 90, penwidth = 15]  ## PowerBI\n    a -> b [label = \"No\", fontsize= 90, penwidth = 15]  ## Continue\n    \n    ## Basic stat\n    b -> c [label = \"Yes\", fontsize= 90, penwidth = 15] \n    b -> d  [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Polished visuals\n    c -> 2 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    c -> e [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Machine learning\n    d -> e [label = \"Yes\", fontsize= 90, penwidth = 15]\n    d -> 2 [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Quick processing\n    e -> 3 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    e -> f [label = \"No\", fontsize= 90, penwidth = 15]\n    \n    ## Interactivity\n    f -> 4 [label = \"Yes\", fontsize= 90, penwidth = 15]\n    f -> 2 [label = \"No\", fontsize= 90, penwidth = 15]\n  }\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 
 ]
@@ -234,7 +234,7 @@ Ethical principles into algorithmic design - would apply as well when designing 
 
 ---
 
-## Productivity  
+## Productivity: getting things done quickly and safely!  
 
 .pull-left[
 
@@ -242,6 +242,8 @@ Ethical principles into algorithmic design - would apply as well when designing 
 
 &gt; Tasks that involve recurrent __data manipulation__ are undertaken by teams...
 &gt; .. but not everyone in the team needs to be a __geek/coder__! 
+
+Many users can use focused R functions through dedicated Graphical User Interface (no need to learn R code...)
 
 ]
 .pull-right[
@@ -283,9 +285,11 @@ class: center, middle, inverse
 ## Sourcing data
 
 .pull-left[
-Data Wrangling takes usually more than 80% of projec time...
+Data Wrangling takes usually more than 80% of any data project time...
 
 Imagine if you need to rewind your analysis...
+
+Correct at any steps in the process and re-run all..
 
 ]
 .pull-right[
@@ -295,16 +299,9 @@ Imagine if you need to rewind your analysis...
 
 ---
 
-## Documentating all your scripts
+## Documenting your scripts
 
-.pull-left[
-Explain what you do
-
-]
-.pull-right[
 .img[![Eat the cake](images/tips.jpg)] 
-]
-
 
 ---
 
@@ -312,7 +309,13 @@ Explain what you do
 
 .pull-left[
 
-Making your function re-usable
+Gradual automation
+
+ * level 1: write a command
+ * level 2: organise multiple command together in re-usable function
+ * Level 3: organise multiple functions together in a package
+ * Level 4: Unit testing 
+ * Level 5: includes test data &amp; Documentation
 ]
 .pull-right[
 .img75[![Eat the cake](images/package.png)] 
@@ -328,17 +331,11 @@ class: center, middle, inverse
 
 ---
 
-## Automatic Data exploration  
-
-.pull-left[
-Data crunching
+## Step 1: Notebook for Automatic Data exploration, aka "crunching"  
 
 
+.img75[![Eat the cake](images/workflow.png)] 
 
-]
-.pull-right[
-.img[![Eat the cake](images/exploration.jpeg)] 
-]
 
 ???
 A comparison of packages for Automated Exploratory Data Analysis 
@@ -374,7 +371,7 @@ https://www.predicagroup.com/blog/visualizing-data-r-script-power-bi/
 
 ---
 
-## Insight creation
+## Step 2: Notebook for Data Insights documentation: Analysis Repo
 
 .pull-left[
 &lt;span style='font-size:30px;'&gt;Not all data can call for interpretation - select the one that can gemerate discussions &amp; __debates__&lt;/span&gt;
@@ -400,13 +397,13 @@ https://bluemoondigital.co/our-blog/5-elements-storytelling-data/
 
 ---
 
-## Communicate with data
+## Step 3: Notebook to communicate with data: Microsite 
 .pull-left[
 &lt;span style='font-size:30px;'&gt;From __assumptions to evidence__ based statement&lt;/span&gt;
 
 Data is to support Narrative - not the other way around!
 
-The Art Data Storytelling: 
+Leverage Art Data Storytelling to: 
  * __Explain__, 
  * __Enlighten__,
  * __Engage__ 
@@ -414,7 +411,7 @@ The Art Data Storytelling:
 
 ]
 .pull-right[
-.img[![Eat the cake](images/read.png)] 
+.img75[![Eat the cake](images/read.png)] 
 ]
 
 ???
@@ -437,47 +434,55 @@ Challenges
 
 ---
 
-
 class: center, middle, inverse
 
 # Conclusion 
 
 ---
 
-## Community
+## Join the Community
 .pull-left[
 
-&lt;span style='font-size:50px;'&gt;you are not alone&lt;/span&gt;
+&lt;span style='font-size:50px;'&gt;You are not alone&lt;/span&gt;
 
- - More than 450 users from multiple organisation in the humanitarian-useR-group
- - Around already 20 R champions within UNHCR  vs more than 420 PowerBI Pro users
- - Existing packages that you can already re-use
+&gt; More than 450 users from multiple organisation in the humanitarian-useR-group
+
+&gt; Around already ≈20 R champions within UNHCR  vs more than 420 PowerBI Pro users
+
+&gt; Try to start by using existing packages and start from a project you can reproduce
 
 ]
 .pull-right[
-.img[![Eat the cake](images/group.png)] 
+.img[![Eat the cake](images/Group.png)] 
 ]
 
 ---
 
-##  Institutionalisation
+##  A call for Institutionalisation
 .pull-left[
 
 Using Multi Tier IT Standard Support model...
+ 
+  * Tier 4: Code Review &amp; Quality Insurance / Contracted Company with global frame agreement (cost: 250 $/Hour)
 
-Tier 0: 
-Tier 1
-Tier 2
-Tier 3
-Tier 4
+  * Tier 3: Internal package development / Internal R champions team (cost: one yearly Rdev meeting to incentivize contributing staff – less than 10 persons)
 
+  * Tier 2: User induction &amp; Advanced User Support / Global Data Service/DIMA (Data Science Team)
+
+  * Tier 1: Basic User Troubleshooting / Global Service Desk  (WIPRO according to Documented Scenario)
+
+  * Tier 0: Self-support / Package documentation (maintained and improved on continuous basis)
 
 ]
 .pull-right[
-.img75[![Eat the cake](images/cake.jpg)] 
+.img75[![Eat the cake](images/tiers.jpg)] 
 ]
 
 ---
+
+##  Your Opinion Count
+
+Please fill this survey to empower UNHCR R community
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
