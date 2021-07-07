@@ -164,7 +164,7 @@ simple data visualization for decision making or complex patterns interpretation
 
 ## Data Products: When What? 
 
-<span style='font-size:30px;'> Dashboard are meaningfull only when displaying KPIs!</span>
+<span style='font-size:30px;'> Dashboard are relevant for displaying KPIs! (_like when you drive your car..._)</span>
 
 > Key Performance Indicators (KPIs) are indicators specificlly designed to show progress toward an intended result, i.e a predefined __target__
 
@@ -195,10 +195,10 @@ grViz("
     graph[layout = dot, # neato|dot|twopi|circo|twopi
           #rankdir = LR, 
           label= '', 
-          fontsize= 45] 
+          fontsize= 135] 
 
     # Decision 
-    node [shape = oval, fontname = Lato, fontsize= 90, margin=1]
+    node [shape = oval, fontname = Lato, fontsize= 150, margin=1]
     X [label = 'Building a data product']; 
     
     # Decision 
@@ -207,7 +207,7 @@ grViz("
           color =  Gold, 
           fillcolor = Gold, 
           fontname = Lato, 
-          fontsize= 95]
+          fontsize= 135]
     a [label = 'Need to display\\n Key Performance\\n Indicators (KPI)?']; 
     b [label = 'Basic\\n Statistics?']; 
     c [label = 'Polished visuals with\\n  brand style?']; 
@@ -220,7 +220,7 @@ grViz("
           style = filled,
           fillcolor = Lavender, 
           fontname = Lato, 
-          fontsize= 120] 
+          fontsize= 160] 
     1 [label = 'Dashboard  \\n with PowerBI', 
              constraint = false , margin=1.5 ];
     2 [label = 'Notebook \\n with Rmd ', margin=1.5];
@@ -228,29 +228,29 @@ grViz("
     4 [label = 'Interface\\n with R-Shiny', margin=1.5];
 
     # Connect nodes with edges and labels
-    X -> a [label = 'Start', fontsize= 90, penwidth = 15] 
-    a -> 1 [label = 'Yes', fontsize= 90, penwidth = 15]  ## PowerBI
-    a -> b [label = 'No', fontsize= 90, penwidth = 15]  ## Continue
+    X -> a [label = 'Start', fontsize= 130, penwidth = 15] 
+    a -> 1 [label = 'Yes', fontsize= 130, penwidth = 15]  ## PowerBI
+    a -> b [label = 'No', fontsize= 130, penwidth = 15]  ## Continue
     
     ## Basic stat
-    b -> c [label = 'Yes', fontsize= 90, penwidth = 15] 
-    b -> d  [label = 'No', fontsize= 90, penwidth = 15]
+    b -> c [label = 'Yes', fontsize= 130, penwidth = 15] 
+    b -> d  [label = 'No', fontsize= 130, penwidth = 15]
     
     ## Polished visuals
-    c -> 2 [label = 'Yes', fontsize= 90, penwidth = 15]
-    c -> e [label = 'No', fontsize= 90, penwidth = 15]
+    c -> 2 [label = 'Yes', fontsize= 130, penwidth = 15]
+    c -> e [label = 'No', fontsize= 130, penwidth = 15]
     
     ## Machine learning
-    d -> e [label = 'Yes', fontsize= 90, penwidth = 15]
-    d -> 2 [label = 'No', fontsize= 90, penwidth = 15]
+    d -> e [label = 'Yes', fontsize= 130, penwidth = 15]
+    d -> 2 [label = 'No', fontsize= 130, penwidth = 15]
     
     ## Quick processing
-    e -> 3 [label = 'Yes', fontsize= 90, penwidth = 15]
-    e -> f [label = 'No', fontsize= 90, penwidth = 15]
+    e -> 3 [label = 'Yes', fontsize= 130, penwidth = 15]
+    e -> f [label = 'No', fontsize= 130, penwidth = 15]
     
     ## Interactivity
-    f -> 4 [label = 'Yes', fontsize= 90, penwidth = 15]
-    f -> 2 [label = 'No', fontsize= 90, penwidth = 15]
+    f -> 4 [label = 'Yes', fontsize= 130, penwidth = 15]
+    f -> 2 [label = 'No', fontsize= 130, penwidth = 15]
   }
 
 ")
@@ -267,7 +267,7 @@ grViz("
 
 class: center, middle, inverse
 
-# Why do you need to work in a reproducible way? 
+# Why we need to work in a reproducible way? 
 
 ### Ethics, Productivity, Learning
 
@@ -289,7 +289,7 @@ class: center, middle, inverse
  
  Scrutinity allows for __accountability__
  
- > _It's okay to make mistakes, as long as one can detect them and that you can learn from them..._ 
+ > _It's okay to make mistakes, as long as one can detect them and that we can learn from them..._ 
 
 ]
 .pull-right[
@@ -305,12 +305,12 @@ Ethical principles into algorithmic design - would apply as well when designing 
 
 .pull-left[
 
-<span style='font-size:30px;'>Automation though functions & scripts can help skipping __repetitive tasks__</span>
+<span style='font-size:30px;'>Automation through functions & scripts can help skipping __repetitive tasks__</span>
 
 > Tasks that involve recurrent __data manipulation__ are undertaken by teams...
 > .. but not everyone in the team needs to be a __geek/coder__! 
 
-Many users can use focused R functions through dedicated Graphical User Interface (no need to learn R code...)
+Many users can use focused R functions through dedicated __Graphical User Interface__ (GUI). If a package include a GUI, then no need for the package user to learn writing R scripts...
 
 ]
 .pull-right[
@@ -321,17 +321,15 @@ https://blog.jonudell.net/2012/01/09/another-way-to-think-about-geeks-and-repeti
 
 ---
 
-## Motivating approach to learning 
+## An R-Community geared to learning 
 
 .pull-left[
 
+Which approach is the most appealing exercise among the 2 proposed aside?!! 
 
 <span style='font-size:40px;'>Start from an end-product and __reverse engineer it__!</span>
 
 Eat the cake first!  (then play with and change ingredients...)
-
-What is the most appealing exercise among the 2 proposed aside?!! 
-
 ]
 .pull-right[
 .img[![Eat the cake](images/learn.png)] 
@@ -345,11 +343,11 @@ class: center, middle, inverse
 
 # Conditions for reproducibility. 
 
-### Sourcing,  documentating, & packaging
+### Sourcing data,  documenting analysis, & packaging output
 
 ---
 
-## Sourcing data
+## Preparing data
 
 .pull-left[
 Data Wrangling takes usually more than 80% of any data project time...
@@ -366,7 +364,7 @@ Correct at any steps in the process and re-run all..
 
 ---
 
-## Documenting your scripts
+## Documenting analysis
 
 .img[![Eat the cake](images/tips.jpg)] 
 
@@ -381,8 +379,9 @@ Gradual automation
  * level 1: write a command
  * level 2: organise multiple command together in re-usable function
  * Level 3: organise multiple functions together in a package
- * Level 4: Unit testing 
- * Level 5: includes test data & Documentation
+ * Level 4: includes test data & Documentation
+ * Level 5: <span style='font-size:30px;'>Unit testing, aka code review</span> 
+ * Level 5: <span style='font-size:30px;'>Graphical User Interface (GUI)</span> 
 ]
 .pull-right[
 .img75[![Eat the cake](images/package.png)] 
@@ -507,7 +506,7 @@ class: center, middle, inverse
 
 ---
 
-## Join the Community
+## R in Humanitarian Context
 .pull-left[
 
 <span style='font-size:50px;'>You are not alone</span>
