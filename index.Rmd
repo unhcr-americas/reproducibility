@@ -509,11 +509,11 @@ class: center, middle, inverse
 
 <span style='font-size:50px;'>You are not alone</span>
 
-> More than 450 users from multiple organisation in the humanitarian-useR-group
+> More than 450 users from multiple organisation in the [humanitarian-useR-group](https://humanitarian-user-group.github.io/)
 
 > Around already ≈20 R champions within UNHCR  vs more than 420 PowerBI Pro users
 
-> Try to start by using existing packages and start from a project you can reproduce
+> Try to start by using existing UNHCR packages and start from a project you can reproduce
 
 ]
 .pull-right[
