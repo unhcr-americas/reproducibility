@@ -32,7 +32,7 @@ layout: true
 
 **Not today:**
 
-- Induction Training on R language! For this head to [UNHCR Learn & Connect]
+- Induction Training on R language! For this head to [UNHCR Learn & Connect](https://unhcr.csod.com/ui/lms-learner-playlist/PlaylistDetails?playlistId=e90e2279-e3a4-4ef2-8b74-757f91d224b2)
 
 ???
 Have you ever completed the development of a data product with the feeling that you may have done a mistake or not have used the optimal way to clean or process your data?  
@@ -310,7 +310,7 @@ Ethical principles into algorithmic design - would apply as well when designing 
 > Tasks that involve recurrent __data manipulation__ are undertaken by teams...
 > .. but not everyone in the team needs to be a __geek/coder__! 
 
-Many users can use focused R functions through dedicated __Graphical User Interface__ (GUI). If a package include a GUI, then no need for the package user to learn writing R scripts...
+When enough investement can be made, __Graphical User Interface__ (GUI) can be developed for specific functions to ease the learning curve of new users while they are still in the process of building up their personal R skills.
 
 ]
 .pull-right[
@@ -321,7 +321,7 @@ https://blog.jonudell.net/2012/01/09/another-way-to-think-about-geeks-and-repeti
 
 ---
 
-## An R-Community geared to learning 
+## An R-Community geared towards learning 
 
 .pull-left[
 
@@ -397,7 +397,7 @@ class: center, middle, inverse
 
 ---
 
-## Step 1: Notebook for Automatic Data exploration, aka "crunching"  
+## Step 1- Notebook for Automatic Data exploration, aka "crunching"  
 
 
 .img75[![Eat the cake](images/workflow.png)] 
@@ -437,19 +437,17 @@ https://www.predicagroup.com/blog/visualizing-data-r-script-power-bi/
 
 ---
 
-## Step 2: Notebook for Data Insights documentation: Analysis Repo
+## Step 2- Notebook for Data Insights documentation: Analysis Repo
 
 .pull-left[
-<span style='font-size:30px;'>Not all data can call for interpretation - select the one that can gemerate discussions & __debates__</span>
 
+> Insight: The capacity to gain an accurate and deep understanding of someone or something
 
-Chart title framed as an opening question
+Not all charts will emulate need for interpretation - the data analyst need to gemerate the one that can create __debates__.
 
-Facilitating data interpretation : 
-  * __Hook__, 
-  * __Discover__,
-  * __Challenge__,
-  * __Call to action__
+Charts need to be __crafted__ - for instance use chart title framed as "opening question"...
+
+Insights arive when a multifunctional team is able to explain __unexpected patterns__, to challenge or revise __existing assumptions__, or to identify evidence to support __Call to action__.
 
 ]
 .pull-right[
@@ -463,7 +461,7 @@ https://bluemoondigital.co/our-blog/5-elements-storytelling-data/
 
 ---
 
-## Step 3: Notebook to communicate with data: Microsite 
+## Step 3- Notebook to communicate with data: Microsite 
 .pull-left[
 <span style='font-size:30px;'>From __assumptions to evidence__ based statement</span>
 
@@ -527,11 +525,11 @@ class: center, middle, inverse
 ##  A call for Institutionalisation
 .pull-left[
 
-Using Multi Tier IT Standard Support model...
+Using Standard Multi Tier IT Standard Support model to enhance reproducible analysis...
  
-  * Tier 4: Code Review & Quality Insurance / Contracted Company with global frame agreement (cost: 250 $/Hour)
+  * Tier 4: Code Review & Quality Insurance / Contracted Company with global frame agreement 
 
-  * Tier 3: Internal package development / Internal R champions team (cost: one yearly Rdev meeting to incentivize contributing staff – less than 10 persons)
+  * Tier 3: Internal package development / Internal R champions team (cost: one yearly Rdev meeting to incentivize contributing staff)
 
   * Tier 2: User induction & Advanced User Support / Global Data Service/DIMA (Data Science Team)
 
@@ -548,4 +546,7 @@ Using Multi Tier IT Standard Support model...
 
 ##  Your Opinion Count
 
-Please fill this survey to empower UNHCR R community
+<span style='font-size:80px;'>
+Please [fill this survey](https://enketo.unhcr.org/single/bac3b19c91c4e5f22f4fa409bc618119) to share your opinion and thoughts on the topic presented here
+
+ </span>

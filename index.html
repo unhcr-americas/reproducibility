@@ -41,7 +41,7 @@ layout: true
 
 **Not today:**
 
-- Induction Training on R language! For this head to [UNHCR Learn &amp; Connect]
+- Induction Training on R language! For this head to [UNHCR Learn &amp; Connect](https://unhcr.csod.com/ui/lms-learner-playlist/PlaylistDetails?playlistId=e90e2279-e3a4-4ef2-8b74-757f91d224b2)
 
 ???
 Have you ever completed the development of a data product with the feeling that you may have done a mistake or not have used the optimal way to clean or process your data?  
@@ -173,7 +173,7 @@ simple data visualization for decision making or complex patterns interpretation
 
 ## Data Products: When What? 
 
-&lt;span style='font-size:30px;'&gt; Dashboard are relevant for displaying KPIs! (like when you drive your car...)&lt;/span&gt;
+&lt;span style='font-size:30px;'&gt; Dashboard are relevant for displaying KPIs! (_like when you drive your car..._)&lt;/span&gt;
 
 &gt; Key Performance Indicators (KPIs) are indicators specificlly designed to show progress toward an intended result, i.e a predefined __target__
 
@@ -186,8 +186,8 @@ simple data visualization for decision making or complex patterns interpretation
 
 
 
-<div id="htmlwidget-129b2df20827f7e02e6e" style="width:100%;height:504px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-129b2df20827f7e02e6e">{"x":{"diagram":" \n  digraph CFA {\n  \n    # direction of flowchart left to right      \n    graph[layout = dot, # neato|dot|twopi|circo|twopi\n          #rankdir = LR, \n          label= \"\", \n          fontsize= 135] \n\n    # Decision \n    node [shape = oval, fontname = Lato, fontsize= 150, margin=1]\n    X [label = \"Building a data product\"]; \n    \n    # Decision \n    node [shape = diamond, \n          style = filled,\n          color =  Gold, \n          fillcolor = Gold, \n          fontname = Lato, \n          fontsize= 135]\n    a [label = \"Need to display\\n Key Performance\\n Indicators (KPI)?\"]; \n    b [label = \"Basic\\n Statistics?\"]; \n    c [label = \"Polished visuals with\\n  brand style?\"]; \n    d [label = \"Satistical Modeling \\n Machine Learning?\"]; \n    e [label = \"Quick processing \\n is critical ?\"]; \n    f [label = \"Need for \\n Interactivity ?\"]; \n\n    # Choices\n    node [shape = box, \n          style = filled,\n          fillcolor = Lavender, \n          fontname = Lato, \n          fontsize= 160] \n    1 [label = \"Dashboard  \\n with PowerBI\", \n             constraint = false , margin=1.5 ];\n    2 [label = \"Notebook \\n with Rmd \", margin=1.5];\n    3 [label = \"Application\\n  with Python\", margin=1.5];\n    4 [label = \"Interface\\n with R-Shiny\", margin=1.5];\n\n    # Connect nodes with edges and labels\n    X -> a [label = \"Start\", fontsize= 130, penwidth = 15] \n    a -> 1 [label = \"Yes\", fontsize= 130, penwidth = 15]  ## PowerBI\n    a -> b [label = \"No\", fontsize= 130, penwidth = 15]  ## Continue\n    \n    ## Basic stat\n    b -> c [label = \"Yes\", fontsize= 130, penwidth = 15] \n    b -> d  [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Polished visuals\n    c -> 2 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    c -> e [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Machine learning\n    d -> e [label = \"Yes\", fontsize= 130, penwidth = 15]\n    d -> 2 [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Quick processing\n    e -> 3 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    e -> f [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Interactivity\n    f -> 4 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    f -> 2 [label = \"No\", fontsize= 130, penwidth = 15]\n  }\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5c153b8acbc806db8daa" style="width:100%;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5c153b8acbc806db8daa">{"x":{"diagram":" \n  digraph CFA {\n  \n    # direction of flowchart left to right      \n    graph[layout = dot, # neato|dot|twopi|circo|twopi\n          #rankdir = LR, \n          label= \"\", \n          fontsize= 135] \n\n    # Decision \n    node [shape = oval, fontname = Lato, fontsize= 150, margin=1]\n    X [label = \"Building a data product\"]; \n    \n    # Decision \n    node [shape = diamond, \n          style = filled,\n          color =  Gold, \n          fillcolor = Gold, \n          fontname = Lato, \n          fontsize= 135]\n    a [label = \"Need to display\\n Key Performance\\n Indicators (KPI)?\"]; \n    b [label = \"Basic\\n Statistics?\"]; \n    c [label = \"Polished visuals with\\n  brand style?\"]; \n    d [label = \"Satistical Modeling \\n Machine Learning?\"]; \n    e [label = \"Quick processing \\n is critical ?\"]; \n    f [label = \"Need for \\n Interactivity ?\"]; \n\n    # Choices\n    node [shape = box, \n          style = filled,\n          fillcolor = Lavender, \n          fontname = Lato, \n          fontsize= 160] \n    1 [label = \"Dashboard  \\n with PowerBI\", \n             constraint = false , margin=1.5 ];\n    2 [label = \"Notebook \\n with Rmd \", margin=1.5];\n    3 [label = \"Application\\n  with Python\", margin=1.5];\n    4 [label = \"Interface\\n with R-Shiny\", margin=1.5];\n\n    # Connect nodes with edges and labels\n    X -> a [label = \"Start\", fontsize= 130, penwidth = 15] \n    a -> 1 [label = \"Yes\", fontsize= 130, penwidth = 15]  ## PowerBI\n    a -> b [label = \"No\", fontsize= 130, penwidth = 15]  ## Continue\n    \n    ## Basic stat\n    b -> c [label = \"Yes\", fontsize= 130, penwidth = 15] \n    b -> d  [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Polished visuals\n    c -> 2 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    c -> e [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Machine learning\n    d -> e [label = \"Yes\", fontsize= 130, penwidth = 15]\n    d -> 2 [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Quick processing\n    e -> 3 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    e -> f [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Interactivity\n    f -> 4 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    f -> 2 [label = \"No\", fontsize= 130, penwidth = 15]\n  }\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 
 ]
@@ -243,7 +243,7 @@ Ethical principles into algorithmic design - would apply as well when designing 
 &gt; Tasks that involve recurrent __data manipulation__ are undertaken by teams...
 &gt; .. but not everyone in the team needs to be a __geek/coder__! 
 
-Many users can use focused R functions through dedicated __Graphical User Interface__ (GUI). If a package include a GUI, then no need for the package user to learn writing R scripts...
+When enough investement can be made __Graphical User Interface__ (GUI) can be developed for specific functions to ease the learning curve of new users while they are still in the process of building up their personal R skills.
 
 ]
 .pull-right[
@@ -254,7 +254,7 @@ https://blog.jonudell.net/2012/01/09/another-way-to-think-about-geeks-and-repeti
 
 ---
 
-## An R-Community geared to learning 
+## An R-Community geared towards learning 
 
 .pull-left[
 
@@ -330,7 +330,7 @@ class: center, middle, inverse
 
 ---
 
-## Step 1: Notebook for Automatic Data exploration, aka "crunching"  
+## Step 1- Notebook for Automatic Data exploration, aka "crunching"  
 
 
 .img75[![Eat the cake](images/workflow.png)] 
@@ -370,19 +370,17 @@ https://www.predicagroup.com/blog/visualizing-data-r-script-power-bi/
 
 ---
 
-## Step 2: Notebook for Data Insights documentation: Analysis Repo
+## Step 2- Notebook for Data Insights documentation: Analysis Repo
 
 .pull-left[
-&lt;span style='font-size:30px;'&gt;Not all data can call for interpretation - select the one that can gemerate discussions &amp; __debates__&lt;/span&gt;
 
+&gt; Insight: The capacity to gain an accurate and deep understanding of someone or something
 
-Chart title framed as an opening question
+Not all charts will emulate need for interpretation - the data analyst need to gemerate the one that can create __debates__.
 
-Facilitating data interpretation : 
-  * __Hook__, 
-  * __Discover__,
-  * __Challenge__,
-  * __Call to action__
+Charts need to be __crafted__ - for instance use chart title framed as "opening question"...
+
+Insights arive when a multifunctional team is able to explain __unexpected patterns__, to challenge or revise __existing assumptions__, or to identify evidence to support __Call to action__.
 
 ]
 .pull-right[
@@ -396,7 +394,7 @@ https://bluemoondigital.co/our-blog/5-elements-storytelling-data/
 
 ---
 
-## Step 3: Notebook to communicate with data: Microsite 
+## Step 3- Notebook to communicate with data: Microsite 
 .pull-left[
 &lt;span style='font-size:30px;'&gt;From __assumptions to evidence__ based statement&lt;/span&gt;
 
@@ -460,11 +458,11 @@ class: center, middle, inverse
 ##  A call for Institutionalisation
 .pull-left[
 
-Using Multi Tier IT Standard Support model...
+Using Standard Multi Tier IT Standard Support model to enhance reproducible analysis...
  
-  * Tier 4: Code Review &amp; Quality Insurance / Contracted Company with global frame agreement (cost: 250 $/Hour)
+  * Tier 4: Code Review &amp; Quality Insurance / Contracted Company with global frame agreement 
 
-  * Tier 3: Internal package development / Internal R champions team (cost: one yearly Rdev meeting to incentivize contributing staff – less than 10 persons)
+  * Tier 3: Internal package development / Internal R champions team (cost: one yearly Rdev meeting to incentivize contributing staff)
 
   * Tier 2: User induction &amp; Advanced User Support / Global Data Service/DIMA (Data Science Team)
 
@@ -481,7 +479,10 @@ Using Multi Tier IT Standard Support model...
 
 ##  Your Opinion Count
 
-Please fill this survey to empower UNHCR R community
+&lt;span style='font-size:80px;'&gt;
+Please [fill this survey](https://enketo.unhcr.org/single/bac3b19c91c4e5f22f4fa409bc618119) to share your opinion and thoughts on the topic presented here
+
+ &lt;/span&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
