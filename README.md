@@ -19,7 +19,7 @@ We will also show you through practical examples how to implement a fully reprod
 Last, we hope that this session will motivate you to join the vibrant R users community in UNHCR and soon become an R champion. 
 
 In order to make the most of the session, we would advise you to install the following open source environment:
--	[R](https://cran.r-project.org/bin/windows/base/)
+-	[R](https://cran.r-project.org/bin/windows/base/) & [Rtools]()
 -	[Rstudio Free version](https://www.rstudio.com/products/rstudio/download/)
 -	Create an [account on Github](https://github.com/join?)  and install [Github desktop](https://desktop.github.com/)
 
