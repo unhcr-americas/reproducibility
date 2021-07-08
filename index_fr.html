@@ -166,7 +166,8 @@ Source potentielle de réticence...
 ???
 visualisation de données simple pour la prise de décision ou interprétation de modèles complexes pour la construction de connaissances
 
---- 
+---
+
 .pull-left[
 
 ## Produits de données : quand quoi ?
@@ -184,8 +185,8 @@ visualisation de données simple pour la prise de décision ou interprétation d
 
 
 
-<div id="htmlwidget-4eeb110ed07f359c7f8d" style="width:100%;height:504px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4eeb110ed07f359c7f8d">{"x":{"diagram":" \n  digraph CFA {\n  \n    # direction of flowchart left to right      \n    graph[layout = dot, # neato|dot|twopi|circo|twopi\n          #rankdir = LR, \n          label= \"\", \n          fontsize= 135] \n\n    # Decision \n    node [shape = oval, fontname = Lato, fontsize= 150, margin=1]\n    X [label = \"Building a data product\"]; \n    \n    # Decision \n    node [shape = diamond, \n          style = filled,\n          color =  Gold, \n          fillcolor = Gold, \n          fontname = Lato, \n          fontsize= 135]\n    a [label = \"Need to display\\n Key Performance\\n Indicators (KPI)?\"]; \n    b [label = \"Basic\\n Statistics?\"]; \n    c [label = \"Polished visuals with\\n  brand style?\"]; \n    d [label = \"Satistical Modeling \\n Machine Learning?\"]; \n    e [label = \"Quick processing \\n is critical ?\"]; \n    f [label = \"Need for \\n Interactivity ?\"]; \n\n    # Choices\n    node [shape = box, \n          style = filled,\n          fillcolor = Lavender, \n          fontname = Lato, \n          fontsize= 160] \n    1 [label = \"Dashboard  \\n with PowerBI\", \n             constraint = false , margin=1.5 ];\n    2 [label = \"Notebook \\n with Rmd \", margin=1.5];\n    3 [label = \"Application\\n  with Python\", margin=1.5];\n    4 [label = \"Interface\\n with R-Shiny\", margin=1.5];\n\n    # Connect nodes with edges and labels\n    X -> a [label = \"Start\", fontsize= 130, penwidth = 15] \n    a -> 1 [label = \"Yes\", fontsize= 130, penwidth = 15]  ## PowerBI\n    a -> b [label = \"No\", fontsize= 130, penwidth = 15]  ## Continue\n    \n    ## Basic stat\n    b -> c [label = \"Yes\", fontsize= 130, penwidth = 15] \n    b -> d  [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Polished visuals\n    c -> 2 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    c -> e [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Machine learning\n    d -> e [label = \"Yes\", fontsize= 130, penwidth = 15]\n    d -> 2 [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Quick processing\n    e -> 3 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    e -> f [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Interactivity\n    f -> 4 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    f -> 2 [label = \"No\", fontsize= 130, penwidth = 15]\n  }\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-600de9bcb32065cef494" style="width:100%;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-600de9bcb32065cef494">{"x":{"diagram":" \n  digraph CFA {\n  \n    # direction of flowchart left to right      \n    graph[layout = dot, # neato|dot|twopi|circo|twopi\n          #rankdir = LR, \n          label= \"\", \n          fontsize= 135] \n\n    # Decision \n    node [shape = oval, fontname = Lato, fontsize= 150, margin=1]\n    X [label = \"Building a data product\"]; \n    \n    # Decision \n    node [shape = diamond, \n          style = filled,\n          color =  Gold, \n          fillcolor = Gold, \n          fontname = Lato, \n          fontsize= 135]\n    a [label = \"Need to display\\n Key Performance\\n Indicators (KPI)?\"]; \n    b [label = \"Basic\\n Statistics?\"]; \n    c [label = \"Polished visuals with\\n  brand style?\"]; \n    d [label = \"Satistical Modeling \\n Machine Learning?\"]; \n    e [label = \"Quick processing \\n is critical ?\"]; \n    f [label = \"Need for \\n Interactivity ?\"]; \n\n    # Choices\n    node [shape = box, \n          style = filled,\n          fillcolor = Lavender, \n          fontname = Lato, \n          fontsize= 160] \n    1 [label = \"Dashboard  \\n with PowerBI\", \n             constraint = false , margin=1.5 ];\n    2 [label = \"Notebook \\n with Rmd \", margin=1.5];\n    3 [label = \"Application\\n  with Python\", margin=1.5];\n    4 [label = \"Interface\\n with R-Shiny\", margin=1.5];\n\n    # Connect nodes with edges and labels\n    X -> a [label = \"Start\", fontsize= 130, penwidth = 15] \n    a -> 1 [label = \"Yes\", fontsize= 130, penwidth = 15]  ## PowerBI\n    a -> b [label = \"No\", fontsize= 130, penwidth = 15]  ## Continue\n    \n    ## Basic stat\n    b -> c [label = \"Yes\", fontsize= 130, penwidth = 15] \n    b -> d  [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Polished visuals\n    c -> 2 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    c -> e [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Machine learning\n    d -> e [label = \"Yes\", fontsize= 130, penwidth = 15]\n    d -> 2 [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Quick processing\n    e -> 3 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    e -> f [label = \"No\", fontsize= 130, penwidth = 15]\n    \n    ## Interactivity\n    f -> 4 [label = \"Yes\", fontsize= 130, penwidth = 15]\n    f -> 2 [label = \"No\", fontsize= 130, penwidth = 15]\n  }\n\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 
 ]
@@ -205,7 +206,7 @@ class: center, middle, inverse
 
 ---
 
-## Éthique : la science est « _montrez-moi_ » - pas « _faites-moi confiance_ »
+## Éthique : la science,  c'est « _montrez-moi_ »! - pas « _faites-moi confiance_ »...
 .pull-left[
 
 &lt;span style='font-size:30px;'&gt;La reproductibilité permet l'__examen par les pairs__&lt;/span&gt;
@@ -301,7 +302,7 @@ Corrigez à toutes les étapes du processus et réexécutez tout.
 
 ---
 
-## de Fonctions jusqu'au package
+## De la "Fonction" jusqu'au "Package"
 
 .pull-left[
 
@@ -312,7 +313,7 @@ Automatisation progressive
  * Niveau 3 : organiser plusieurs fonctions ensemble dans un package
  * Niveau 4: comprend les données de test et la documentation
  * Niveau 5 : &lt;span style='font-size:30px;'&gt;Tests unitaires, alias revue de code&lt;/span&gt;
- * Niveau 5 : &lt;span style='font-size:30px;'&gt;Interface utilisateur graphique (GUI)&lt;/span&gt;
+ * Niveau 6 : &lt;span style='font-size:30px;'&gt;Interface utilisateur graphique (GUI)&lt;/span&gt;
 ]
 .pull-right[
 .img75[![Manger le gâteau](images/package.png)]
@@ -365,7 +366,7 @@ Vous pouvez utiliser le script R avec Power BI de plusieurs manières. Les princ
  - Visualisation - étendre la gamme de visualisations disponibles dans R et implémenter 
 ---
 
-## Étape 2 - Documentation Notebook for Data Insights : Analysis Repo
+## Étape 2 - Notebook de Documentation pour les éclairage via les données : Analysis Repo
 
 .pull-left[
 

@@ -158,7 +158,8 @@ Source potentielle de réticence...
 ???
 visualisation de données simple pour la prise de décision ou interprétation de modèles complexes pour la construction de connaissances
 
---- 
+---
+
 .pull-left[
 
 ## Produits de données : quand quoi ?
@@ -273,7 +274,7 @@ class: center, middle, inverse
 
 ---
 
-## Éthique : la science est « _montrez-moi_ » - pas « _faites-moi confiance_ »
+## Éthique : la science,  c'est « _montrez-moi_ »! - pas « _faites-moi confiance_ »...
 .pull-left[
 
 <span style='font-size:30px;'>La reproductibilité permet l'__examen par les pairs__</span>
@@ -369,7 +370,7 @@ Corrigez à toutes les étapes du processus et réexécutez tout.
 
 ---
 
-## de Fonctions jusqu'au package
+## De la "Fonction" jusqu'au "Package"
 
 .pull-left[
 
@@ -380,7 +381,7 @@ Automatisation progressive
  * Niveau 3 : organiser plusieurs fonctions ensemble dans un package
  * Niveau 4: comprend les données de test et la documentation
  * Niveau 5 : <span style='font-size:30px;'>Tests unitaires, alias revue de code</span>
- * Niveau 5 : <span style='font-size:30px;'>Interface utilisateur graphique (GUI)</span>
+ * Niveau 6 : <span style='font-size:30px;'>Interface utilisateur graphique (GUI)</span>
 ]
 .pull-right[
 .img75[![Manger le gâteau](images/package.png)]
@@ -433,7 +434,7 @@ Vous pouvez utiliser le script R avec Power BI de plusieurs manières. Les princ
  - Visualisation - étendre la gamme de visualisations disponibles dans R et implémenter 
 ---
 
-## Étape 2 - Documentation Notebook for Data Insights : Analysis Repo
+## Étape 2 - Notebook de Documentation pour les éclairage via les données : Analysis Repo
 
 .pull-left[
 
