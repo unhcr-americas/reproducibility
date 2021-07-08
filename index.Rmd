@@ -310,7 +310,7 @@ Ethical principles into algorithmic design - would apply as well when designing 
 > Tasks that involve recurrent __data manipulation__ are undertaken by teams...
 > .. but not everyone in the team needs to be a __geek/coder__! 
 
-When enough investement can be made, __Graphical User Interface__ (GUI) can be developed for specific functions to ease the learning curve of new users while they are still in the process of building up their personal R skills.
+When enough investment can be made, __Graphical User Interface__ (GUI) can be developed for specific functions to ease the learning curve of new users while they are still in the process of building up their personal R skills.
 
 ]
 .pull-right[
@@ -377,11 +377,11 @@ Correct at any steps in the process and re-run all..
 Gradual automation
 
  * level 1: write a command
- * level 2: organise multiple command together in re-usable function
- * Level 3: organise multiple functions together in a package
+ * level 2: organize multiple command together in re-usable function
+ * Level 3: organize multiple functions together in a package
  * Level 4: includes test data & Documentation
  * Level 5: <span style='font-size:30px;'>Unit testing, aka code review</span> 
- * Level 5: <span style='font-size:30px;'>Graphical User Interface (GUI)</span> 
+ * Level 6: <span style='font-size:30px;'>Graphical User Interface (GUI)</span> 
 ]
 .pull-right[
 .img75[![Eat the cake](images/package.png)] 
