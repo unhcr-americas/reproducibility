@@ -454,7 +454,7 @@ Seule une équipe multifonctionnelle est capable d'expliquer des __motifs inatte
 ???
 https://www.ictworks.org/wp-content/uploads/2021/02/usaid-guide-artificial-intelligence.pdf
 https://bluemoondigital.co/our-blog/5-elements-storytelling-data/
-
+Check the analysis repo: http://analysis.unhcr.org
 
 ---
 
@@ -476,7 +476,7 @@ Tirez parti de la narration avec des données pour :
 ]
 
 ???
-
+voir https://github.com/unhcr-americas/ageingonthemove/blob/main/README.md
 
 https://distill.pub/2020/communicating-with-interactive-articles/#applications-tab
 Diffusion de la recherche

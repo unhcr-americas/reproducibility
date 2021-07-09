@@ -457,6 +457,7 @@ Insights arive when a multifunctional team is able to explain __unexpected patte
 ???
 https://www.ictworks.org/wp-content/uploads/2021/02/usaid-guide-artificial-intelligence.pdf
 https://bluemoondigital.co/our-blog/5-elements-storytelling-data/
+Check the analysis repo: http://analysis.unhcr.org
 
 
 ---
@@ -479,7 +480,7 @@ Leverage Art Data Storytelling to:
 ]
 
 ???
-
+See https://github.com/unhcr-americas/ageingonthemove/blob/main/README.md
 
 https://distill.pub/2020/communicating-with-interactive-articles/#applications-tab 
 Research Dissemination
