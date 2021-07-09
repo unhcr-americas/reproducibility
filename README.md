@@ -1,4 +1,18 @@
-# reproducibility
+# Reproducibility: Why & How
+
+## Intro 
+
+This repo contains the slides of a webinar to promote reproducible aproaches in UNHCR - specifically when dealing with Household survey dataset
+
+Slides are available in [English](https://unhcr-americas.github.io/reproducibility/index.html) & [French](https://unhcr-americas.github.io/reproducibility/index_fr.html) - and were converted in PDF ([English](https://unhcr-americas.github.io/reproducibility/index.pdf) & [French](https://unhcr-americas.github.io/reproducibility/index_fr.pdf)) with the following:
+
+```{r }
+source("https://git.io/xaringan2pdf")
+remotes::install_github("rstudio/chromote")
+install.packages(c("progress", "jsonlite", "pdftools", "digest"))
+xaringan_to_pdf("index.html")
+xaringan_to_pdf("index_fr.html")
+```
 
 ## Objectives:
 As a result of the webinar, Learners will:
