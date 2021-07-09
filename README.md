@@ -2,9 +2,9 @@
 
 ## Intro 
 
-This repo contains the slides of a webinar to promote reproducible aproaches in UNHCR - specifically when dealing with Household survey dataset
+This repo contains the slides (designed with [xaringan](https://bookdown.org/yihui/rmarkdown/xaringan-format.html)) of a webinar to promote reproducible approaches in UNHCR - specifically when dealing with Household survey dataset
 
-Slides are available in [English](https://unhcr-americas.github.io/reproducibility/index.html) & [French](https://unhcr-americas.github.io/reproducibility/index_fr.html) - and were converted in PDF ([English](https://unhcr-americas.github.io/reproducibility/index.pdf) & [French](https://unhcr-americas.github.io/reproducibility/index_fr.pdf)) with the following:
+Slides are available in [English](https://unhcr-americas.github.io/reproducibility/index.html) & [French](https://unhcr-americas.github.io/reproducibility/index_fr.html) - slides note can be displayed by pressing keyboard shortcut `p` - and were converted in PDF ([English](https://unhcr-americas.github.io/reproducibility/index.pdf) & [French](https://unhcr-americas.github.io/reproducibility/index_fr.pdf)) with the following:
 
 ```{r }
 source("https://git.io/xaringan2pdf")

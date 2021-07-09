@@ -548,5 +548,7 @@ Using Standard Multi Tier IT Standard Support model to enhance reproducible anal
 
 <span style='font-size:80px;'>
 Please [fill this survey](https://enketo.unhcr.org/single/bac3b19c91c4e5f22f4fa409bc618119) to share your opinion and thoughts on the topic presented here
-
  </span>
+ 
+Slides are available in [English](https://unhcr-americas.github.io/reproducibility/index.html) & [French](https://unhcr-americas.github.io/reproducibility/index_fr.html) - slides note can be displayed by pressing keyboard shortcut `p` - and in PDF ([English](https://unhcr-americas.github.io/reproducibility/index.pdf) & [French](https://unhcr-americas.github.io/reproducibility/index_fr.pdf)) within this [github repo](https://github.com/unhcr-americas/reproducibility)
+ 
